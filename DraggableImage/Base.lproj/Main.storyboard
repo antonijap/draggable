@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DraggableImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5T-kq-CBU">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterAoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-uu-viD"/>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="CTh-Vh-MpM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fbe-uu-viD" secondAttribute="trailing" id="FZX-Lz-lvq"/>
+                                    <constraint firstItem="Fbe-uu-viD" firstAttribute="top" secondItem="X5T-kq-CBU" secondAttribute="top" id="TI1-nY-0E8"/>
+                                    <constraint firstItem="Fbe-uu-viD" firstAttribute="leading" secondItem="X5T-kq-CBU" secondAttribute="leading" id="Z43-pI-YAM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fbe-uu-viD" secondAttribute="bottom" id="eyt-wi-5Mo"/>
+                                    <constraint firstAttribute="height" constant="128" id="yFn-tD-8r0"/>
+                                </constraints>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-pw-Bd5">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterBoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="let-vb-Hlr"/>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="let-vb-Hlr" secondAttribute="bottom" id="6qk-yF-ufR"/>
+                                    <constraint firstAttribute="trailing" secondItem="let-vb-Hlr" secondAttribute="trailing" id="EPG-wL-WVR"/>
+                                    <constraint firstItem="let-vb-Hlr" firstAttribute="top" secondItem="a3p-pw-Bd5" secondAttribute="top" id="HDD-ja-suR"/>
+                                    <constraint firstAttribute="width" constant="141" id="f40-5F-r3b"/>
+                                    <constraint firstItem="let-vb-Hlr" firstAttribute="leading" secondItem="a3p-pw-Bd5" secondAttribute="leading" id="kEg-7I-4VD"/>
+                                    <constraint firstAttribute="height" constant="128" id="r2o-4t-D5W"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterA" highlightedImage="letterA" translatesAutoresizingMaskIntoConstraints="NO" id="mFI-b2-Dq4" customClass="dragImg" customModule="DraggableImage" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="nsy-bJ-KG3"/>
+                                    <constraint firstAttribute="height" constant="128" id="pBI-aS-mgA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterB" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-WY-8ir" customClass="dragImg" customModule="DraggableImage" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7qg-tg-f9H"/>
+                                    <constraint firstAttribute="width" constant="141" id="Ip2-Ar-7R5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X5T-kq-CBU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9cD-5P-rcy"/>
+                            <constraint firstItem="dTw-WY-8ir" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ApW-ic-b3r"/>
+                            <constraint firstItem="a3p-pw-Bd5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="La8-TD-ySL"/>
+                            <constraint firstItem="a3p-pw-Bd5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="hVF-Ah-TpN"/>
+                            <constraint firstItem="X5T-kq-CBU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="vTb-CK-ZsG"/>
+                            <constraint firstItem="mFI-b2-Dq4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wiO-YQ-jch"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mFI-b2-Dq4" secondAttribute="bottom" constant="71" id="zA5-9e-WcD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dTw-WY-8ir" secondAttribute="bottom" constant="77" id="zr2-wb-LZh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="letterA" destination="mFI-b2-Dq4" id="aGc-fa-MSu"/>
+                        <outlet property="letterAtarget" destination="X5T-kq-CBU" id="7iF-S2-Rmh"/>
+                        <outlet property="letterB" destination="dTw-WY-8ir" id="eKI-tE-qsf"/>
+                        <outlet property="letterBtarget" destination="a3p-pw-Bd5" id="X1g-rI-0DV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="letterA" width="740" height="744"/>
+        <image name="letterAoutlines" width="515" height="445"/>
+        <image name="letterB" width="228" height="331"/>
+        <image name="letterBoutlines" width="300" height="300"/>
+    </resources>
+</document>
