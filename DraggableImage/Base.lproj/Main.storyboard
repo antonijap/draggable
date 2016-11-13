@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +22,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5T-kq-CBU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-Ye-Qqt" userLabel="LetterA2target">
+                                <rect key="frame" x="16" y="227" width="141" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterAoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-uu-viD"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterAoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-VS-Zzt" userLabel="letterA2outlines">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bOg-VS-Zzt" secondAttribute="trailing" id="LrC-rf-TwQ"/>
+                                    <constraint firstAttribute="width" constant="141" id="MaZ-jA-C1z"/>
+                                    <constraint firstAttribute="bottom" secondItem="bOg-VS-Zzt" secondAttribute="bottom" id="QcP-df-Mo8"/>
+                                    <constraint firstItem="bOg-VS-Zzt" firstAttribute="leading" secondItem="ZsP-Ye-Qqt" secondAttribute="leading" id="Y6o-zX-C0D"/>
+                                    <constraint firstItem="bOg-VS-Zzt" firstAttribute="top" secondItem="ZsP-Ye-Qqt" secondAttribute="top" id="c5i-Et-iai"/>
+                                    <constraint firstAttribute="height" constant="128" id="tAE-AH-0kU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5T-kq-CBU">
+                                <rect key="frame" x="16" y="59" width="141" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterAoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-uu-viD">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="128"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -34,8 +57,11 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-pw-Bd5">
+                                <rect key="frame" x="218" y="59" width="141" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterBoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="let-vb-Hlr"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterBoutlines" translatesAutoresizingMaskIntoConstraints="NO" id="let-vb-Hlr">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="128"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -48,12 +74,14 @@
                                 </constraints>
                             </view>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterA" highlightedImage="letterA" translatesAutoresizingMaskIntoConstraints="NO" id="mFI-b2-Dq4" customClass="dragImg" customModule="DraggableImage" customModuleProvider="target">
+                                <rect key="frame" x="16" y="468" width="138" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="nsy-bJ-KG3"/>
                                     <constraint firstAttribute="height" constant="128" id="pBI-aS-mgA"/>
                                 </constraints>
                             </imageView>
                             <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letterB" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-WY-8ir" customClass="dragImg" customModule="DraggableImage" customModuleProvider="target">
+                                <rect key="frame" x="218" y="462" width="141" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="7qg-tg-f9H"/>
                                     <constraint firstAttribute="width" constant="141" id="Ip2-Ar-7R5"/>
@@ -65,6 +93,8 @@
                             <constraint firstItem="X5T-kq-CBU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9cD-5P-rcy"/>
                             <constraint firstItem="dTw-WY-8ir" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ApW-ic-b3r"/>
                             <constraint firstItem="a3p-pw-Bd5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="La8-TD-ySL"/>
+                            <constraint firstItem="ZsP-Ye-Qqt" firstAttribute="top" secondItem="X5T-kq-CBU" secondAttribute="bottom" constant="40" id="Lg1-1Q-itE"/>
+                            <constraint firstItem="ZsP-Ye-Qqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eM5-qw-NeY"/>
                             <constraint firstItem="a3p-pw-Bd5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="hVF-Ah-TpN"/>
                             <constraint firstItem="X5T-kq-CBU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="vTb-CK-ZsG"/>
                             <constraint firstItem="mFI-b2-Dq4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wiO-YQ-jch"/>
@@ -74,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="letterA" destination="mFI-b2-Dq4" id="aGc-fa-MSu"/>
+                        <outlet property="letterA2target" destination="ZsP-Ye-Qqt" id="rhE-wr-dlN"/>
                         <outlet property="letterAtarget" destination="X5T-kq-CBU" id="7iF-S2-Rmh"/>
                         <outlet property="letterB" destination="dTw-WY-8ir" id="eKI-tE-qsf"/>
                         <outlet property="letterBtarget" destination="a3p-pw-Bd5" id="X1g-rI-0DV"/>

@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var letterB: dragImg!
     @IBOutlet weak var letterAtarget: UIView!
     @IBOutlet weak var letterBtarget: UIView!
+    @IBOutlet weak var letterA2target: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        letterA.dropTarget = letterAtarget
-        letterB.dropTarget = letterBtarget
+        letterA.dropTargets = [letterAtarget, letterA2target]
+        letterB.dropTargets = [letterBtarget]
         
         let notificationName = Notification.Name("onTarget")
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onTarget), name: notificationName, object: nil)
